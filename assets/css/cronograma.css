@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+
+  background: #f4d1f4;
+
+  min-height: 100vh;
+}
+
+.container {
+
+  display: flex;
+
+  min-height: 100vh;
+}
+
+.sidebar {
+
+  width: 250px;
+
+  background: linear-gradient(
+    to bottom,
+    #8d12ff,
+    #c400ff
+  );
+
+  color: white;
+
+  padding: 25px 20px;
+}
+
+.logo {
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-icon {
+
+  width: 45px;
+  height: 45px;
+
+  border: 1px solid white;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-item {
+
+  text-decoration: none;
+
+  color: white;
+
+  padding: 15px;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu-item.active {
+
+  background: rgba(255,255,255,0.2);
+}
+
+.main-content {
+
+  flex: 1;
+
+  padding: 40px;
+}
+
+.header h1 {
+
+  font-size: 42px;
+
+  color: #222;
+}
+
+.header p {
+
+  margin-top: 10px;
+
+  color: #666;
+}
+
+.alertas {
+
+  margin-top: 35px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.alerta {
+
+  background: #ffefef;
+
+  border-left: 8px solid #ff1f3d;
+
+  padding: 18px;
+
+  border-radius: 16px;
+
+  color: #8b0000;
+
+  font-weight: bold;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+.timeline {
+
+  margin-top: 40px;
+
+  display: grid;
+
+  gap: 20px;
+}
+
+
+.timeline-item {
+
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 24px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.info h3 {
+
+  color: #222;
+
+  margin-bottom: 10px;
+}
+
+.info p {
+
+  color: #666;
+
+  margin-top: 4px;
+}
+
+.tag {
+
+  padding: 12px 18px;
+
+  border-radius: 18px;
+
+  color: white;
+
+  font-weight: bold;
+}
+
+.casamento {
+  background: #ff4fa3;
+}
+
+.aniversario {
+  background: #8d12ff;
+}
+
+.festa {
+  background: #ff9800;
+}

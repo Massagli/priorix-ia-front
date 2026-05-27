@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Priorix IA</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <aside class="sidebar">
+
+      <div>
+
+        <div class="logo">
+
+          <div class="logo-icon">
+            <i class="fa-solid fa-cake-candles"></i>
+          </div>
+
+          <h2>Priorix IA</h2>
+
+        </div>
+
+        <nav class="menu">
+
+          <a
+            href="index.html"
+            class="menu-item active"
+          >
+            <i class="fa-solid fa-table-columns"></i>
+            Dashboard
+          </a>
+
+          <a
+            href="cronograma.html"
+            class="menu-item"
+          >
+            <i class="fa-solid fa-calendar-days"></i>
+            Cronograma
+          </a>
+
+        </nav>
+
+      </div>
+
+    </aside>
+
+    <main class="main-content">
+
+      <div class="header">
+
+        <h1>Olá, Adriel 👋</h1>
+
+        <p id="total-pedidos">
+          Você tem 0 pedidos ativos
+        </p>
+
+      </div>
+
+      
+    <div class="status-filtro">
+        <div class="status-container">
+
+            <div
+            class="status red"
+            id="alta-status"
+            >
+            Alta 0
+            </div>
+
+            <div
+            class="status yellow"
+            id="media-status"
+            >
+            Média 0
+            </div>
+
+            <div
+            class="status green"
+            id="baixa-status"
+            >
+            Baixa 0
+            </div>
+        </div>
+
+        <div class="filters">
+
+            <select id="filterPriority">
+
+            <option value="all">
+                Todas prioridades
+            </option>
+
+            <option value="alta">
+                Alta prioridade
+            </option>
+
+            <option value="media">
+                Média prioridade
+            </option>
+
+            <option value="baixa">
+                Baixa prioridade
+            </option>
+
+            </select>
+
+            <select id="sortDate">
+
+            <option value="recentes">
+                Mais recentes
+            </option>
+
+            <option value="antigas">
+                Mais antigas
+            </option>
+
+            </select>
+
+        </div>
+    
+    </div>
+
+      <div class="content">
+
+        <div
+          class="cards"
+          id="cards-container"
+        >
+
+        </div>
+
+        <div class="chat">
+
+          <div class="chat-header">
+
+            <h2>CHAT IA</h2>
+
+            <i class="fa-solid fa-robot"></i>
+
+          </div>
+
+          <div
+            class="messages"
+            id="messages"
+          >
+
+          </div>
+
+          <div class="chat-input">
+
+            <input
+              type="text"
+              id="messageInput"
+              placeholder="Digite..."
+            >
+
+            <button id="sendBtn">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="assets/scripts/script.js"></script>
+
+</body>
+</html>
